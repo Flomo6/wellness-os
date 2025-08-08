@@ -6,7 +6,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "dev:all": "turbo run dev --parallel"
   },
   "devDependencies": {
     "turbo": "^2.0.0",
