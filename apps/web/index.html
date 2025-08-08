@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wellness OS</title>
+    <style>
+      body { margin:0; font-family: system-ui, sans-serif; }
+      .toolbar { display:flex; gap:12px; padding:12px; border-bottom:1px solid #eee; align-items:center; }
+      .grid { display:grid; height: calc(100vh - 56px); }
+      .col-header { position:sticky; top:0; background:#fff; z-index:2; border-bottom:1px solid #eee; padding:8px; text-align:center; font-weight:600; }
+      .timecol { background:#fafafa; border-right:1px solid #eee; }
+      .cell { border-bottom:1px dashed #f0f0f0; border-right:1px solid #f6f6f6; position:relative; cursor: crosshair; }
+      .slot { position:absolute; inset:2px; background:rgba(59,130,246,.15); border:1px solid rgba(59,130,246,.5); border-radius:6px; }
+      .appt { position:absolute; left:2px; right:2px; background:#93c5fd; border-left:4px solid #2563eb; color:#0f172a; border-radius:6px; padding:4px 6px; font-size:12px; overflow:hidden; }
+      .panel { position:fixed; top:0; right:0; width:360px; height:100vh; background:#fff; box-shadow:-2px 0 8px rgba(0,0,0,.08); padding:16px; display:flex; flex-direction:column; gap:12px; }
+      .btn { padding:8px 12px; border:1px solid #ddd; border-radius:8px; background:#fff; cursor:pointer; }
+      .btn.primary { background:#111827; color:#fff; border-color:#111827; }
+      .row { display:flex; gap:8px; align-items:center; }
+      .select, input { padding:8px; border:1px solid #ddd; border-radius:8px; width:100%; }
+      .notice { color:#065f46; background:#ecfdf5; border:1px solid #a7f3d0; padding:8px; border-radius:8px; }
+      .err { color:#7f1d1d; background:#fef2f2; border:1px solid #fecaca; padding:8px; border-radius:8px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

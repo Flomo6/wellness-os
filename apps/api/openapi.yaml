@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: Wellness OS API
+  version: 0.1.0
+paths:
+  /v1/staff:
+    get:
+      summary: List staff
+      responses: { "200": { description: OK } }
+  /v1/services:
+    get:
+      summary: List services
+      responses: { "200": { description: OK } }
+  /v1/availability:
+    get:
+      summary: Query availability (simple)
+      responses: { "200": { description: OK } }
+  /v1/appointments:
+    post:
+      summary: Create appointment
+      responses: { "200": { description: OK } }
+  /v1/appointments/{id}/cancel:
+    post:
+      summary: Cancel appointment
+      responses: { "200": { description: OK } }
+  /v1/appointments/{id}/reschedule:
+    post:
+      summary: Reschedule
+      responses: { "200": { description: OK } }
